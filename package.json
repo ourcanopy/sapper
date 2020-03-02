@@ -1,6 +1,6 @@
 {
-  "name": "@ourcanopy/sapper-bazel",
-  "version": "0.27.10",
+  "name": "@ourcanopy/sapper",
+  "version": "0.28.0",
   "description": "The next small thing in web development, powered by Svelte",
   "bin": {
     "sapper": "./sapper"
