@@ -1,5 +1,5 @@
 {
-  "name": "sapper",
+  "name": "@ourcanopy/sapper-bazel",
   "version": "0.27.10",
   "description": "The next small thing in web development, powered by Svelte",
   "bin": {
