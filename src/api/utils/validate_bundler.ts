@@ -1,10 +1,10 @@
 import * as fs from 'fs';
 
-export default function validate_bundler(bundler?: 'rollup' | 'webpack') {
+export default function validate_bundler(bundler?: 'rollup' | 'webpack', cwd: string) {
 	if (!bundler) {
 		bundler = (
-			fs.existsSync('rollup.config.js') ? 'rollup' :
-			fs.existsSync('webpack.config.js') ? 'webpack' :
+			fs.existsSync(path.resolve(cwd, 'rollup.config.js')) ? 'rollup' :
+			fs.existsSync(path.resolve(cwd, 'webpack.config.js')) ? 'webpack' :
 			null
 		);
 
